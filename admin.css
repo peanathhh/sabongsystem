@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e1e; /* Dark background */
+  color: #f4f4f4; /* Light text */
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #282828; /* Slightly lighter than body */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f4f4f4;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Match Entry Section */
+.match-entry, .fight-timer, .status-display, .reports {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #333;
+}
+
+.match-entry h2, .fight-timer h2, .status-display h2, .reports h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #555;
+  padding-bottom: 5px;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.entry .meron, .entry .wala {
+  flex: 1;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ddd;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #444;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #ff0000, #990000); /* Red Gradient for Buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #cc0000, #660000);
+}
+
+button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+/* Fight Timer Section */
+#timer {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffcc00; /* Yellow for Timer */
+  margin: 10px 0;
+}
+
+/* Match Status Section */
+#fightStatus, #fightOutcome {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #00ccff; /* Blue Accent */
+}
+
+#winnerForm select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #444;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+#winnerForm button {
+  margin-top: 10px;
+}
+
+/* Reports Section */
+#fastestKillReport {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff8800; /* Orange for Reports */
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .entry {
+      flex-direction: column;
+  }
+
+  header h1 {
+      font-size: 1.8rem;
+  }
+
+  button {
+      font-size: 0.9rem;
+      padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.5rem;
+  }
+
+  #timer {
+      font-size: 2rem;
+  }
+
+  input, select {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+}

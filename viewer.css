@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#currentMatch p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+#fightStatus, #fightOutcome, #matchDuration {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+#fightStatus {
+  font-weight: bold;
+  color: #ff9900;
+}
+
+#fightOutcome {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+#matchDuration, #fastestKillReport {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+#fightTimer {
+  text-align: center;
+}
+
+#countdown {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #dc3545;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.bet-entry {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bet-entry input, .bet-entry select {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Betting Buttons */
+.betButton {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  width: 45%;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.meron {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.wala {
+  background-color: #3498db;
+  color: white;
+}
+
+.meron:hover {
+  background-color: #c0392b;
+}
+
+.wala:hover {
+  background-color: #2980b9;
+}
+
+.bet-status p {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+
+  header h1 {
+      font-size: 2rem;
+  }
+
+  section h2 {
+      font-size: 1.6rem;
+  }
+
+  #fightStatus, #fightOutcome, #matchDuration {
+      font-size: 1.1rem;
+  }
+
+  #countdown {
+      font-size: 2.5rem;
+  }
+
+  .bet-entry input, .bet-entry select {
+      width: 80%;
+  }
+
+  .betButton {
+      width: 100%;
+      margin: 5px 0;
+  }
+}
+
+/* For very small screens */
+@media screen and (max-width: 480px) {
+  header h1 {
+      font-size: 1.8rem;
+  }
+
+  #countdown {
+      font-size: 2rem;
+      padding: 8px 15px;
+  }
+
+  section h2 {
+      font-size: 1.4rem;
+  }
+
+  #fightStatus, #fightOutcome, #matchDuration, #fastestKillReport {
+      font-size: 1.1rem;
+  }
+
+  #fightOutcome {
+      font-size: 1.3rem;
+  }
+
+  .bet-entry input, .bet-entry select {
+      width: 90%;
+  }
+}
